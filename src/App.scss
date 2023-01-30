@@ -1,0 +1,144 @@
+.container{
+    width: 60%;
+    margin: 25px auto;
+}
+@media only screen and (max-width: 600px) {
+    .container {
+        width:100%;
+        padding: 5px 12px;
+    }
+  }
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0px 5px;
+    .logo{
+        display: flex;
+    }
+}
+
+#search_section{
+   margin: 25px 0px;
+    .search{
+        position: relative;
+        input{
+            width: 100%;
+            padding: 15px 40px 15px 12px;
+            border-radius: 5px;
+            border: none;
+            background-color: var(--gray);
+            color: var(--dark);
+        }
+        svg{
+            position: absolute;
+            top: 50%;
+            right: 10px;           
+            transform: translateY(-50%);
+        }
+    }
+}
+
+.text_hero{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    h1{
+        font-size: 45px;
+        margin-bottom: 15px;
+    }
+}
+
+.speak_text{
+    color: var(--purple);
+}
+
+.play_btn{
+    background-color: var(--light-purple);
+    padding: 10px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+}
+
+.secton_header{
+    display: flex;
+    align-items: center;
+    margin: 15px 0px;
+    span{
+        padding-right: 7px;
+        font-weight: bold;
+    }
+
+    hr{
+        width: 100%;
+        border: none;
+        border-top: 2px solid var(--gray);
+    }
+}
+
+.meaning{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding-left: 40px;
+    margin-top: 15px;
+    
+
+    li{
+        color: var(--purple);
+        p{
+            text-align: left;
+            color: var(--dark);
+        }
+    }
+}
+
+#source{
+    margin-top: 15px;
+    .source_content{
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        span{
+            color: var(--smoke);
+        }
+
+        a{
+            color: var(--dark);
+        }
+
+    }
+}
+
+.theme_btn{
+    background-color: transparent;
+    padding: 3px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-color: var(--dark);
+}
+
+
+
+.c_dark{
+    color: var(--dark);
+}
+
+.c_smoke{
+    color: var(--smoke);
+}
+
+.test{
+    & + &{
+        margin-top: 50px;
+    }
+}
